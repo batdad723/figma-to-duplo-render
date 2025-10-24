@@ -1,62 +1,68 @@
 import { Card } from "@/components/ui/card";
-import { Brain, Cpu, Network, Sparkles } from "lucide-react";
+import { Brain, Code2, Workflow, Settings } from "lucide-react";
 
-const technologies = [
+const features = [
   {
     icon: Brain,
-    title: "Advanced AI Models",
-    description: "Powered by state-of-the-art language models for intelligent decision making"
+    title: "Advanced reasoning",
+    description: "State-of-the-art AI models trained specifically for software engineering tasks"
   },
   {
-    icon: Cpu,
-    title: "High Performance",
-    description: "Built on scalable infrastructure that grows with your needs"
+    icon: Code2,
+    title: "Full-stack capabilities",
+    description: "Works across your entire codebase, from database to frontend"
   },
   {
-    icon: Network,
-    title: "Cloud Native",
-    description: "Native integration with AWS, Azure, GCP and more"
+    icon: Workflow,
+    title: "Autonomous workflows",
+    description: "Independently plans, executes, and validates complex development tasks"
   },
   {
-    icon: Sparkles,
-    title: "Continuous Learning",
-    description: "AI that learns from your patterns and improves over time"
+    icon: Settings,
+    title: "Integrated tooling",
+    description: "Seamlessly works with your existing development tools and workflows"
   }
 ];
 
 const PoweredBy = () => {
   return (
     <section className="py-24 bg-background">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl lg:text-5xl font-bold">
-            Powered by <span className="text-primary">cutting-edge technology</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Built with the latest advancements in AI and cloud infrastructure
-          </p>
-        </div>
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
+              Built for ambitious teams
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Devin combines cutting-edge AI with practical software engineering to deliver real results
+            </p>
+          </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {technologies.map((tech, index) => {
-            const Icon = tech.icon;
-            return (
-              <Card
-                key={index}
-                className="p-8 bg-gradient-to-br from-secondary/30 to-muted/20 border-border/50 hover:border-primary/50 transition-all duration-300 group"
-              >
-                <div className="mb-6 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                  <Icon className="h-7 w-7" />
-                </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                  {tech.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {tech.description}
-                </p>
-              </Card>
-            );
-          })}
+          <div className="grid md:grid-cols-2 gap-6">
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <Card 
+                  key={index}
+                  className="p-8 bg-card hover:bg-accent/50 transition-all duration-300 border-border group cursor-pointer"
+                >
+                  <div className="space-y-4">
+                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <Icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-semibold text-foreground">
+                        {feature.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

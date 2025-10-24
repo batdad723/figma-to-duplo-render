@@ -1,32 +1,113 @@
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { TrendingUp } from "lucide-react";
+
+const stats = [
+  { value: "8x", label: "Engineering time efficiency gain" },
+  { value: "20x", label: "Cost savings" },
+  { value: "25%", label: "Of total code volume" }
+];
 
 const BuildYourOwn = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-secondary/50 to-muted/30 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
-      
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Build your own <span className="text-primary">AI DevOps agent</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Customize Duplo to fit your workflow. Create custom automations, integrate with your tools, and train it on your infrastructure.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90">
-              Get started
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="secondary" className="bg-secondary hover:bg-secondary/80">
-              View documentation
-            </Button>
+    <section className="py-24 bg-muted/30">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left: Stats and testimonial */}
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
+                  Trusted by world-class teams
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Engineering teams at leading companies use Devin to ship faster and focus on what matters.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-3 gap-6">
+                {stats.map((stat, index) => (
+                  <div key={index} className="space-y-1">
+                    <div className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                      {stat.value}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <Card className="p-6 bg-card border-border">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex-shrink-0" />
+                    <div className="space-y-2">
+                      <p className="text-sm text-foreground leading-relaxed">
+                        "Devin has become an essential part of our engineering workflow. It's like having an additional senior engineer on every project."
+                      </p>
+                      <div className="text-sm">
+                        <div className="font-semibold text-foreground">Sarah Chen</div>
+                        <div className="text-muted-foreground">VP of Engineering, Nubank</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              <div>
+                <Button variant="outline" size="lg">
+                  Read customer stories
+                </Button>
+              </div>
+            </div>
+
+            {/* Right: Visual */}
+            <div className="relative">
+              <Card className="p-8 bg-card border-border">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <TrendingUp className="w-6 h-6 text-primary" />
+                    <h3 className="text-xl font-semibold">Impact metrics</h3>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      <div className="flex justify-between text-sm">
+                        <span className="text-muted-foreground">Code quality</span>
+                        <span className="font-semibold">98%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full w-[98%] bg-gradient-to-r from-green-500 to-emerald-500" />
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <div className="flex justify-between text-sm">
+                        <span className="text-muted-foreground">Time saved</span>
+                        <span className="font-semibold">85%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full w-[85%] bg-gradient-to-r from-blue-500 to-cyan-500" />
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <div className="flex justify-between text-sm">
+                        <span className="text-muted-foreground">Developer satisfaction</span>
+                        <span className="font-semibold">92%</span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-full w-[92%] bg-gradient-to-r from-purple-500 to-pink-500" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-primary opacity-5 blur-3xl rounded-full"></div>
     </section>
   );
 };
