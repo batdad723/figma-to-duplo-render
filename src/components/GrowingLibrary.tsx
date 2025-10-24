@@ -5,21 +5,39 @@ import { FileText, Video, BookOpen } from "lucide-react";
 const resources = [
   {
     icon: FileText,
-    title: "Case studies",
-    description: "See how leading teams use Devin to transform their development process",
-    count: "12+ stories"
+    title: "Infrastructure as Code",
+    description: "Automate infrastructure provisioning with AI-generated Terraform",
+    count: "Explore"
   },
   {
     icon: Video,
-    title: "Product demos",
-    description: "Watch Devin in action solving real-world engineering challenges",
-    count: "Watch now"
+    title: "CI/CD Pipeline",
+    description: "Intelligent deployment pipelines that adapt to your workflow",
+    count: "Learn more"
   },
   {
     icon: BookOpen,
-    title: "Documentation",
-    description: "Comprehensive guides to get the most out of Devin",
-    count: "Start learning"
+    title: "Monitoring & Alerts",
+    description: "AI-powered monitoring that predicts and prevents issues",
+    count: "Get started"
+  },
+  {
+    icon: FileText,
+    title: "Security Scanning",
+    description: "Continuous security analysis and automated remediation",
+    count: "Discover"
+  },
+  {
+    icon: Video,
+    title: "Cost Analytics",
+    description: "Real-time cost tracking and optimization recommendations",
+    count: "View details"
+  },
+  {
+    icon: BookOpen,
+    title: "Compliance Agent",
+    description: "Automated compliance checking and reporting",
+    count: "Start now"
   }
 ];
 
@@ -30,14 +48,16 @@ const GrowingLibrary = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
-              Learn more about Devin
+              Access a <span className="text-primary">Growing Library</span> of
+              <br />
+              DevOps Agents
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Explore resources to understand how Devin can help your team
+              Pre-built agents for common DevOps tasks and workflows
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {resources.map((resource, index) => {
               const Icon = resource.icon;
               return (

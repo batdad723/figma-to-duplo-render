@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { TrendingUp } from "lucide-react";
 
 const stats = [
-  { value: "8x", label: "Engineering time efficiency gain" },
-  { value: "20x", label: "Cost savings" },
-  { value: "25%", label: "Of total code volume" }
+  { value: "75%", label: "Faster deployments" },
+  { value: "60%", label: "Cost reduction" },
+  { value: "99.9%", label: "Uptime achieved" }
 ];
 
 const BuildYourOwn = () => {
@@ -18,10 +18,10 @@ const BuildYourOwn = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
-                  Trusted by world-class teams
+                  Build your own <span className="text-primary">DevOps AI Engineer</span>
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Engineering teams at leading companies use Devin to ship faster and focus on what matters.
+                  Explore a world where AI accelerates infrastructure & accelerates idea-to-prod time.
                 </p>
               </div>
 
@@ -44,11 +44,11 @@ const BuildYourOwn = () => {
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex-shrink-0" />
                     <div className="space-y-2">
                       <p className="text-sm text-foreground leading-relaxed">
-                        "Devin has become an essential part of our engineering workflow. It's like having an additional senior engineer on every project."
+                        "Duplo transformed our DevOps operations. We went from manual deployments to fully automated CI/CD in weeks."
                       </p>
                       <div className="text-sm">
-                        <div className="font-semibold text-foreground">Sarah Chen</div>
-                        <div className="text-muted-foreground">VP of Engineering, Nubank</div>
+                        <div className="font-semibold text-foreground">Alex Martinez</div>
+                        <div className="text-muted-foreground">DevOps Lead, TechCorp</div>
                       </div>
                     </div>
                   </div>
@@ -57,7 +57,7 @@ const BuildYourOwn = () => {
 
               <div>
                 <Button variant="outline" size="lg">
-                  Read customer stories
+                  Get Started
                 </Button>
               </div>
             </div>

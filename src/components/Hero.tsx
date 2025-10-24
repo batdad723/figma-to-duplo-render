@@ -14,16 +14,16 @@ const Hero = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
                   <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-                    Devin
+                    Duplo
                   </span>
                   <br />
                   <span className="text-muted-foreground">
-                    The AI Software Engineer
+                    The AI DevOps Engineer
                   </span>
                 </h1>
                 
                 <p className="text-xl text-muted-foreground max-w-xl">
-                  A collaborative AI teammate built to help ambitious engineering teams achieve more.
+                  Automate your entire DevOps workflow with AI. Duplo handles infrastructure, deployments, monitoring, and incident response.
                 </p>
               </div>
 
@@ -70,7 +70,7 @@ const Hero = () => {
                       </div>
                       <div className="flex-1 bg-background border border-border rounded-lg p-4">
                         <p className="text-sm text-foreground">
-                          Can you help me implement authentication in our Next.js app?
+                          Deploy our microservices to production with zero downtime
                         </p>
                       </div>
                     </div>
@@ -82,20 +82,20 @@ const Hero = () => {
                       </div>
                       <div className="flex-1 bg-card border border-border rounded-lg p-4 space-y-3">
                         <p className="text-sm text-foreground">
-                          I'll implement authentication for you. Let me:
+                          I'll handle the deployment. Let me:
                         </p>
                         <ul className="text-sm text-muted-foreground space-y-2">
                           <li className="flex items-start gap-2">
                             <span className="text-green-500">✓</span>
-                            Set up NextAuth.js configuration
+                            Configure Kubernetes cluster
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-green-500">✓</span>
-                            Create login/signup pages
+                            Set up blue-green deployment
                           </li>
                           <li className="flex items-start gap-2">
                             <span className="text-blue-500 animate-pulse">●</span>
-                            Implementing protected routes...
+                            Rolling out services...
                           </li>
                         </ul>
                       </div>
@@ -106,8 +106,8 @@ const Hero = () => {
 
               {/* Floating indicators */}
               <div className="absolute -right-4 -bottom-4 bg-card border border-border rounded-lg px-4 py-2 shadow-lg">
-                <div className="text-xs text-muted-foreground">Running tests...</div>
-                <div className="text-sm font-semibold text-green-500">98% passed</div>
+                <div className="text-xs text-muted-foreground">Health checks...</div>
+                <div className="text-sm font-semibold text-green-500">All services up</div>
               </div>
             </div>
           </div>

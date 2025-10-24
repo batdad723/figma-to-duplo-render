@@ -4,23 +4,23 @@ import { Code2, Sparkles, Rocket, Shield } from "lucide-react";
 const useCases = [
   {
     icon: Code2,
-    title: "Write code",
-    description: "Devin writes production-ready code across your entire stack, from frontend to backend."
+    title: "Cost Optimization",
+    description: "Analyze and optimize cloud infrastructure costs automatically, identifying savings opportunities."
   },
   {
     icon: Sparkles,
-    title: "Fix bugs",
-    description: "Automatically identify, debug, and resolve issues in your codebase with intelligent analysis."
+    title: "Security Compliance",
+    description: "Continuously monitor and enforce security policies across your entire infrastructure."
   },
   {
     icon: Rocket,
-    title: "Ship features",
-    description: "Go from idea to deployed feature faster with AI-powered development workflows."
+    title: "Auto Scaling",
+    description: "Intelligently scale resources based on demand patterns and performance metrics."
   },
   {
     icon: Shield,
-    title: "Maintain quality",
-    description: "Ensure code quality with automated testing, reviews, and best practice enforcement."
+    title: "Incident Response",
+    description: "Detect, diagnose, and resolve production incidents automatically with AI-powered analysis."
   }
 ];
 
@@ -31,10 +31,10 @@ const UseCases = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
-              What Devin can do
+              Use <span className="text-primary">Cases</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A collaborative AI teammate that handles the full software development lifecycle
+              Transform your DevOps operations with AI-powered automation and intelligent workflows
             </p>
           </div>
 

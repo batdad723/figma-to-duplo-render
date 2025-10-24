@@ -7,22 +7,22 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <span className="text-xl font-semibold text-foreground">Devin</span>
+            <span className="text-xl font-semibold text-foreground">Duplo</span>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
-            <a href="#enterprise" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Enterprise
+            <a href="#product" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Product
             </a>
-            <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Pricing
+            <a href="#use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Use Cases
             </a>
-            <a href="#customers" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Customers
+            <a href="#library" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Library
             </a>
-            <a href="#blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Blog
+            <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              About
             </a>
           </div>
           

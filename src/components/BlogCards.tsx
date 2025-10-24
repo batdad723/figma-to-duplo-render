@@ -4,22 +4,28 @@ import { ArrowRight } from "lucide-react";
 const BlogCards = () => {
   const posts = [
     {
-      category: "Case Study",
-      title: "How Nubank refactors millions of lines of code with Devin",
-      excerpt: "8x engineering time efficiency gain and 20x cost savings",
+      category: "DevOps",
+      title: "Why Vendors Love Using Multi Cloud",
+      excerpt: "Reducing cloud costs by 40% with intelligent resource optimization",
       date: "Jan 2025"
     },
     {
-      category: "Product",
-      title: "Introducing Devin's new collaborative features",
-      excerpt: "Work alongside Devin with real-time feedback and suggestions",
+      category: "DevOps",
+      title: "Why Vendors Love Using Multi Cloud",
+      excerpt: "Automated incident response reduces MTTR by 75%",
       date: "Dec 2024"
     },
     {
-      category: "Engineering",
-      title: "The future of AI-assisted software development",
-      excerpt: "Our vision for how AI will transform engineering teams",
+      category: "DevOps",
+      title: "Why Vendors Love Using Multi Cloud",
+      excerpt: "From hours to minutes: AI-powered infrastructure deployment",
       date: "Nov 2024"
+    },
+    {
+      category: "DevOps",
+      title: "Why Vendors Love Using Multi Cloud",
+      excerpt: "Ensuring compliance across multi-cloud environments",
+      date: "Oct 2024"
     }
   ];
 
@@ -30,10 +36,12 @@ const BlogCards = () => {
           <div className="flex justify-between items-end mb-12">
             <div className="space-y-2">
               <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
-                Latest insights
+                Ready to transform your
+                <br />
+                <span className="text-primary">DevOps workflow?</span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                News, updates, and stories from the Devin team
+                Join teams already automating their infrastructure with AI
               </p>
             </div>
             <a href="#blog" className="text-sm font-semibold text-primary hover:underline flex items-center gap-2">
@@ -41,7 +49,7 @@ const BlogCards = () => {
             </a>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {posts.map((post, index) => (
               <Card 
                 key={index}

@@ -4,23 +4,23 @@ import { Brain, Code2, Workflow, Settings } from "lucide-react";
 const features = [
   {
     icon: Brain,
-    title: "Advanced reasoning",
-    description: "State-of-the-art AI models trained specifically for software engineering tasks"
+    title: "Infrastructure as Code",
+    description: "Automated provisioning and configuration management with Terraform and CloudFormation"
   },
   {
     icon: Code2,
-    title: "Full-stack capabilities",
-    description: "Works across your entire codebase, from database to frontend"
+    title: "Multi-Cloud Support",
+    description: "Deploy and manage across AWS, Azure, GCP, and hybrid environments seamlessly"
   },
   {
     icon: Workflow,
-    title: "Autonomous workflows",
-    description: "Independently plans, executes, and validates complex development tasks"
+    title: "Compliance & Security",
+    description: "Built-in compliance frameworks (SOC 2, HIPAA, PCI-DSS) with automated policy enforcement"
   },
   {
     icon: Settings,
-    title: "Integrated tooling",
-    description: "Seamlessly works with your existing development tools and workflows"
+    title: "Cost Optimization",
+    description: "Real-time cost monitoring and intelligent resource scaling to minimize cloud spend"
   }
 ];
 
@@ -31,10 +31,12 @@ const PoweredBy = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
-              Built for ambitious teams
+              Powered by <span className="text-primary">DuploCloud's</span>
+              <br />
+              Automation Platform
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Devin combines cutting-edge AI with practical software engineering to deliver real results
+              Built on enterprise-grade infrastructure automation and compliance
             </p>
           </div>
 

@@ -1,6 +1,6 @@
 const TrustedBy = () => {
   const companies = [
-    "Anthropic", "OpenAI", "Stripe", "Coinbase", "Databricks", "Replit"
+    "DashDash", "Verbal", "Remont Madsen", "Free", "Lily's", "Gallery", "Infinant"
   ];
 
   return (
