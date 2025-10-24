@@ -1,10 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import TrustedBy from "@/components/TrustedBy";
-import ExploreMore from "@/components/ExploreMore";
-import Integrations from "@/components/Integrations";
-import SecurityCompliance from "@/components/SecurityCompliance";
-import CTA from "@/components/CTA";
+import UseCases from "@/components/UseCases";
+import BuildYourOwn from "@/components/BuildYourOwn";
+import PoweredBy from "@/components/PoweredBy";
+import GrowingLibrary from "@/components/GrowingLibrary";
+import BlogCards from "@/components/BlogCards";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,10 +15,11 @@ const Index = () => {
       <main>
         <Hero />
         <TrustedBy />
-        <ExploreMore />
-        <Integrations />
-        <SecurityCompliance />
-        <CTA />
+        <UseCases />
+        <BuildYourOwn />
+        <PoweredBy />
+        <GrowingLibrary />
+        <BlogCards />
       </main>
       <Footer />
     </div>
